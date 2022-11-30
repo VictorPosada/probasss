@@ -1,0 +1,23 @@
+/*encabezado*/
+body {background-color: #000; color: white}
+#encabezado {text-align: center; background-image: url("fondo-gris.jpg");}
+#Logoizquierda {float:left}
+#Logoderecha {float:right}
+
+/*Cuerpo*/
+#mensaje_principal {border: 1px solid; border-collapse:collapse;}
+.perfil { border: 2px solid ; width: 50em; border-color: white red white white ;}
+.perfil img {width: 50%; bottom: 500px; margin-left:25%;}
+.mensaje { border: 2px solid white; width: 300em;}
+.mensaje h3 {text-align: center; margin-top: 2px ;}
+.mensaje p {margin-left: 1%; }
+.Nombre_usuario h3{text-align: center; margin-top: 2px;}
+.Nombre_usuario{text-align: center; margin-top: 0;}
+.respuestas {border: 1px solid white; border-collapse:collapse; margin: 0.5em 0 0 1.5em;}
+#opcionlapizPrincipal {width: 2%;}
+.opcioncorazon {width: 2%; margin-left:0; padding-left: 95.7%; }
+.opcionlapiz {width: 2%; margin-left:0; padding-left: 98%; }
+
+/*foot*/
+.foot { position:relative; bottom:0em; background-color: blue; width: 100%; }
+a:hover{color:red; float:right; background-color: green;}

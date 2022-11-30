@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	 <title>Editar Perfil</title>
+	 <meta http-equiv="Content-Type"	content="text/html; charset=UTF-8" />
+	 <meta name="author"	content="Victor Posada Soto, Fernando Moure, Raúl Mosquera Hoyos" />
+	 <meta name="generator"	content="Visual Studio Code" />
+	 <meta name="description"	content="Foro destinado al alumnado del Ies de Teis" />
+	 <meta name="keywords"	content="Foro, Ies de teis, metas, javas y de todo" />
+	<link rel="stylesheet" type="text/css" href="estilo.css" />
+    <link rel="icon" href="LogoTeis.jpg" type="image/icon type">
+
+</head>
+<body>
+
+    <header>
+        <div id="encabezado"> 
+            <img id="Logoderecha" src="LogoTeis.jpg" width="5%"/>  
+            <img id="Logoizquierda" src="LogoTeis.jpg" width="5%"/>
+            <h1>FORO DE ALUMNADO</h1>
+            <h3>&copy;IES de Teis</h3>
+        </div>
+    </header>   
+
+    <nav>
+        <div class="topbar">
+            <a href="Inicio.html">Inicio</a>
+            <div class="dropdown">
+                <button class="dropbtn">ASIR
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">DAM</a>
+                  <a href="#">DAW</a>
+                  <a href="#">SMR</a>
+                </div>
+              </div>
+            <a href="#">Noticias</a>
+            <input type="text" placeholder="Buscar ..">
+            <a class="active" href="#home">Perfil</a>
+          </div>
+    </nav>
+
+    <main class="main_perfil">
+        <div class="columna">
+            <div class="contenidoPerfil">
+                <div class="buscarusuario">
+                    <p class="buscadorUsuario">Buscar usuario</p>
+                    <input type="text" placeholder="Buscar ..">
+                </div>
+                <div class="perfil">
+                    <div class="usuario">
+                        <h2>Julio Agosto</h2>
+                        <label for="fname">Nuevo nombre:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="avatar">Elige una foto de perfil:</label>
+                        <div class="fakeimg" >Image</div>
+                        <input class="fotoperf" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                        <h3>Estudiante</h3>
+                        <label for="fname">Nuevo tipo:</label>
+                            <input type="text" id="fname" name="fname"><br><br>
+                        <h3>ASIR</h3>
+                        <label for="fname">Nombre grupo</label>
+                            <input type="text" id="fname" name="fname"><br><br>
+                        <h3>Biografía:</h3>
+                        <textarea name="textarea" rows="10" cols="50">Escribe tu biografía..</textarea>
+                        <button type="button" >Guardar</button>
+                    </div>
+                    <div class="last_post">
+                        <h2>Últimas publicaciones</h2>
+                        <table>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Tipo</th>
+                                <th>Título</th>
+                                <th>Puntuación</th>
+                            </tr>
+                            <tr>
+                                <td>10-10-22</td>
+                                <td>Publicacion</td>
+                                <td><a href="#">TextText</a></td>
+                                <td>+10</td>
+                            </tr>
+                            <tr>
+                                <td>10-10-22</td>
+                                <td>Publicacion</td>
+                                <td><a href="#">TextText</a></td>
+                                <td>+10</td>
+                            </tr>
+                            <tr>
+                                <td>10-10-22</td>
+                                <td>Publicacion</td>
+                                <td><a href="#">TextText</a></td>
+                                <td>+10</td>
+                            </tr>
+                            <tr>
+                                <td>10-10-22</td>
+                                <td>Publicacion</td>
+                                <td><a href="#">TextText</a></td>
+                                <td>+10</td>
+                            </tr>
+                            <tr>
+                                <td>10-10-22</td>
+                                <td>Publicacion</td>
+                                <td><a href="#">TextText</a></td>
+                                <td>+10</td>
+                            </tr>
+                         
+                            <tr class="vermas">
+                                <td colspan="4"><a href="">Ver mas</a></td>
+                            </tr>
+                        </table>
+                        <h2>Últimas valoraciones</h2>
+                        <table>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Tipo</th>
+                                <th>Título</th>
+                            </tr>
+                            <tr>
+                                <td>10-10-22</td>
+                                <td>Positiva</td>
+                                <td>TextText</td>
+                            </tr>
+                            <tr>
+                                <td>10-10-22</td>
+                                <td>Publicacion</td>
+                                <td>TextText</td>
+                            </tr>
+                            <tr>
+                                <td>10-10-22</td>
+                                <td>Publicacion</td>
+                                <td>TextText</td>
+                            </tr>
+                            <tr>
+                                <td>10-10-22</td>
+                                <td>Publicacion</td>
+                                <td>TextText</td>
+                            </tr>
+                            <tr>
+                                <td>10-10-22</td>
+                                <td>Publicacion</td>
+                                <td>TextText</td>
+                            </tr>
+                            <tr class="vermas">
+                                <td colspan="3"><a href="">Ver mas</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="login.html" class="cerrar_sesion">Cerrar sesión</a>
+        <a href="administracion.html" class="adminis">Administración</a>
+    </footer>
+  
+</body>

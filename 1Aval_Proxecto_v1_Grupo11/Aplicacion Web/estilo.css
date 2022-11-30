@@ -1,0 +1,550 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {box-sizing: border-box;}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar {
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+}
+
+.topbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 0.7em;
+  margin: 0.1em;
+  flex-basis: 15%;
+  background-color: lightgrey;
+}
+
+.topbar a:hover {
+  background-color: rgb(182, 158, 158);
+  color: black;
+}
+
+.topbar a.active {
+  background-color: gray;
+  color: white;
+}
+
+.topbar input[type=text] {
+  padding: 6px;
+  margin-top: 4px;
+  margin-right: 4px;
+  margin-left: 4px;
+  border: none;
+  font-size: 17px;
+  height: 2.5em;
+  border-radius: 0.7em;
+  background-color: gainsboro;
+  flex-basis: 40%;
+  border: solid black;
+}
+
+@media screen and (max-width: 600px) {
+  .topbar a {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topbar input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 2000%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topbar input[type=text] {
+    border: 1px solid black;  
+  }
+}
+
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  display: flex;
+  flex-basis: 15%;
+  margin: 0.1em;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  margin: 0.1em;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  width: 100%;
+  border-radius: 0.7em;
+  background-color: lightgrey;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(182, 158, 158);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 14.7%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin: 3em 0em;
+  background-color: white;
+  border-bottom-left-radius: 0.7em;
+  border-bottom-right-radius: 0.7em;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin: 0.1em;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+
+.admin {
+  display: inline;
+  text-align: center;
+  background-color: red;
+}
+
+
+.buscarusuario{
+  text-align: center;
+  background-color: lightgray;
+}
+input{
+  border-radius: 0.7em;
+}
+.buscadorUsuario{
+  display: inline;
+}
+.columna{
+  display: flex;
+  flex-direction: column;
+}
+.perfil {  
+  display: flex;
+}
+.usuario {
+  flex-basis: 33%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  height: 100%;
+}
+.last_post {
+  flex-basis: 70%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-left: solid;
+  border-color: black;
+  min-height: 100%;
+}
+
+.admin2 {
+  flex-basis: 33%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  min-height: 100%;
+  border-left: solid;
+  border-color: black;
+}
+.admin3 {
+  flex-basis: 33%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  min-height: 100%;
+  border-left: solid;
+  border-color: black;
+}
+.fakeimg {
+  background-color: #aaa;
+  width: 8em;
+  height: 8em;
+  padding: 20px;
+
+}
+
+.main_perfil{
+  padding-bottom: 5px;
+}
+
+
+.main_perfil table{
+  width: 100%;
+  border-style: inset;
+  border-radius: 0.7em;
+}
+.main_perfil th{
+  border-bottom: dashed;
+}
+.main_perfil th:nth-child(1){
+  width: 10%;
+  border-right: dashed;
+}
+.main_perfil th:nth-child(2){
+  width: 10%;
+  border-right: dashed;
+}
+.main_perfil th:nth-child(3){
+  width: 80%;
+  border-right: dashed;
+}
+.main_perfil td:nth-child(1){
+  border-right: dashed;
+}
+.main_perfil td:nth-child(2){
+  border-right: dashed;
+}
+.main_perfil td:nth-child(3){
+  border-right: dashed;
+}
+.main_perfil td:last-child, th:last-child{
+  border-right: none;
+}
+.vermas td{
+  text-align: center;
+  border-right: none;
+  border-top: dashed;
+}
+.perfil button{
+  float: center;
+}
+
+/*encabezado*/
+#encabezado {text-align: center; background-image: url("fondo-gris.jpg");}
+#Logoizquierda {float:left}
+#Logoderecha {float:right}
+
+
+
+header img{
+  height: 6em;
+  width: 6em;
+  margin: 0.0em 1em;
+}
+header{
+  border-bottom: solid;
+}
+
+/*foot*/
+footer{
+  background-color: gray;
+  text-align: center;
+  font-size: 0.7em;
+  padding: 0.5em;
+  position:sticky;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+}
+footer .adminis {
+  float: right;
+}
+footer .cerrar_sesion{
+  float:left;
+}
+
+
+
+/*login*/
+
+.loginpage button {   
+  background-color: gray;   
+  width: 100%;  
+  color: black;   
+  padding: 15px;   
+  margin: 10px 0px;   
+  border: none;   
+  cursor: pointer;   
+  border-radius: 0.7em;
+  }   
+.loginpage{
+  padding-top: 2px;
+}
+
+.loginpage p{
+  margin-bottom: 2em;
+}
+  
+.loginpage .login {   
+  border: 3px solid #f1f1f1;  
+  width: 40%; 
+  margin: auto auto;
+  padding: 25px;   
+  background-color: lightgray;
+  border-radius: 0.7em;
+}   
+
+.loginpage input[type=text], .loginpage input[type=password] {   
+  width: 100%;   
+  margin: 8px 0;  
+  padding: 12px 20px;   
+  display: inline-block;   
+  border: 2px solid gray;   
+  box-sizing: border-box;  
+  border-radius: 0.7em; 
+}  
+.loginpage button:hover {   
+   opacity: 0.7;   
+}   
+.loginpage .cancelbtn {   
+   width: auto;   
+   padding: 10px 18px;  
+   margin: 10px 5px;  
+}   
+
+.loginpage .login p{
+  display: inline;
+}
+
+.loginpage button[type=submit]{
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+
+.loginpage .titulo_login{
+  text-align: center;
+}
+
+
+
+/*home*/
+.home{
+  text-align: center;
+  background-color: #f1f1f1;
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+.tabla_home{
+  width: 60%;
+  margin: 4em auto;
+}
+
+.home h2{
+  padding-top: 2em;
+}
+
+
+.tabla_home td{
+  height: 8em;
+  border-style: solid;
+  border-radius: 0.7em;
+  width: 50%;
+  background-color:azure;
+}
+
+.fotoperf{
+  margin-top: 0.3em;
+}
+
+.admin_tabla :nth-child(1){
+  width: 20%;
+}
+
+
+
+
+
+
+html{
+  min-height: 100%;
+/*  margin-left: 5%;
+  margin-right: 5%;*/
+}
+
+main{
+  min-height: 100%;
+  background-color: #f1f1f1;
+}
+
+
+/*listado_foro*/
+
+.a:hover{
+  color:rgb(30, 0, 255);
+  font-weight: bolder;
+}
+
+a{
+  color:black;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.titulo_tabla{
+  display: flex;
+}
+
+.titulo_tabla div{
+  padding: 5px;
+  margin: 2px;
+  background-color: rgb(185, 185, 185);
+  font-weight: bold;
+}
+
+.titulo_tabla .estado{
+  flex: 6%;
+  text-align: center;
+}
+
+.titulo_tabla .asunto{
+  flex: 75%;
+}
+
+.titulo_tabla .actividad{
+  flex: 14%;
+}
+
+.titulo_tabla .ultima_actividad{
+  flex: 15%;
+}
+
+.linea{
+  display: flex;
+  margin-bottom: 1.5em;
+}
+
+.linea .estado, .linea .asunto, .linea .actividad, .linea .ultima_actividad{
+  padding: 5px;
+  margin: 2px;
+  background-color: rgb(140, 140, 140);
+}
+
+.linea .estado{
+  flex: 6%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.linea .asunto{
+  flex: 75%;
+}
+
+.linea .actividad{
+  flex: 14%;
+}
+
+.linea .ultima_actividad{
+  flex: 15%;
+}
+
+.repositorio{
+  margin-block: 20px;
+  font-weight: lighter;
+  font-size: 24px;
+}
+
+.pie{
+  display: flex;
+}
+
+.nuevo-hilo{
+  padding: 15px;
+  text-align: right;
+  background-color: rgb(160, 160, 160);
+}
+
+.paginas{
+  margin-left: 2%;
+  margin-top: 3%;
+  flex: 50%;
+  font-size: 16px;
+}
+
+.boton_busqueda{
+  margin-left: 5px;
+  padding: 20px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.bodiv{
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.contenido_hilo{
+  display: flex;
+  margin: 1em;
+}
+
+.comentario_hilo{
+  display: flex;
+  margin: 1em;
+  margin-left: 4em;
+  padding-right: 2em;
+  padding-left: 2em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+.respuesta{
+  display: flex;
+  margin-left: 10em;
+  padding-bottom: 2em;
+}
+
+.comentario{
+  flex: 75%;
+}
+
+.autor{
+  flex: 25%;
+  display: flex;
+}
+
+.avatar{
+  width: 4.5em;
+  height: 4.5em;
+  margin-right: 1em;
+}
+
